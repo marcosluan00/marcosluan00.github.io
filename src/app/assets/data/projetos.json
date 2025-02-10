@@ -34,17 +34,6 @@
         ]
       },
       {
-        "categoria": "Java",
-        "items": [
-          {
-            "nome": "Sistema Bancário",
-            "descricao": "Sistema Bancário - Estudo da Arquitetura Hexagonal - Em Construção",
-            "imagem": "/ilustracoes/banking-java.svg",
-            "github": "https://github.com/marcosluan00/sistema-bancario"
-          }
-        ]
-      },
-      {
         "categoria": "Diversos",
         "items": [
           {

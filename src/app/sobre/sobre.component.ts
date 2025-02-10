@@ -11,5 +11,7 @@ import sobreData from '../assets/data/sobre.json';
 export class SobreComponent {
   sobreJson = sobreData;
 
-  
+  toggleExperience(experiencia: any) {
+    experiencia.show = !experiencia.show;
+  }
 }

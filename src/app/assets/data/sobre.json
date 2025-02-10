@@ -12,7 +12,8 @@
           "Participação ativa em sprints e daily meetings, focando na entrega contínua de valor ao cliente.",
           "Atualizações em aplicações legadas com JSP/JSF, seguindo boas práticas e priorizando acessibilidade.",
           "Experiência com ferramentas como GitHub, Bitbucket, SVN e StarTeam para controle de versão."
-        ]
+        ],
+        "show": false
       },{
         "companhia": "IEL Roraima",
         "periodo": "2021 - 2022",
@@ -23,7 +24,8 @@
           "Realização de manutenções preventivas e corretivas em dispositivos e infraestrutura de redes (cabeamento, roteadores e switches).",
           "Programação em PHP para criação e personalização de sistemas internos.",
           "Criação de dashboards interativos com ferramentas low-code, otimizando a análise de dados e a tomada de decisão."
-        ]
+        ],
+        "show": false
       }],
       "skills": [
         { 
