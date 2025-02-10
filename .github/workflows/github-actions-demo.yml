@@ -10,23 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Angular Deploy gh-pages Actions
+        uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.4.0
         with:
-          node-version: '18'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build Angular project
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          folder: dist/portifolio
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+          angular_project_dir: ./
+          build_configuration: production
+          base_href: /
+          deploy_branch: main
+          angular_dist_build_folder: dist/portifolio
+          run_lint: false
+          skip_failure: false
