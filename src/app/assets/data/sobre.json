@@ -1,0 +1,79 @@
+{
+    "experiencias": [
+    {
+        "companhia": "Capgemini",
+        "periodo": "2022 - Atual",
+        "resumo": "Desenvolvedor Fullstack com experiência no desenvolvimento de aplicações web e mobile usando Angular e Java com Spring Boot.",
+        "detalhes": [
+          "Criação de aplicações modernas com foco em web, mobile (WebView) e micro frontends.",
+          "Consumo eficiente de APIs e colaboração com Backend for Frontend (BFF) com SpringBoot",
+          "Implementação de melhorias, garantindo conformidade com os padrões de acessibilidade web.",
+          "Criação de testes unitários com Jest, Karma, JUnit, alcançando cobertura superior a 80%.",
+          "Participação ativa em sprints e daily meetings, focando na entrega contínua de valor ao cliente.",
+          "Atualizações em aplicações legadas com JSP/JSF, seguindo boas práticas e priorizando acessibilidade.",
+          "Experiência com ferramentas como GitHub, Bitbucket, SVN e StarTeam para controle de versão."
+        ]
+      },{
+        "companhia": "IEL Roraima",
+        "periodo": "2021 - 2022",
+        "resumo": "Atuação em suporte técnico, manutenção de equipamentos e redes, além de desenvolvimento e automação de sistemas internos.",
+        "detalhes": [
+          "Atendimento aos usuários, resolução de problemas técnicos relacionados a software, hardware e redes, garantindo a continuidade das operações.",
+          "Identificação proativa de falhas, minimizando impactos no ambiente de produção.",
+          "Realização de manutenções preventivas e corretivas em dispositivos e infraestrutura de redes (cabeamento, roteadores e switches).",
+          "Programação em PHP para criação e personalização de sistemas internos.",
+          "Criação de dashboards interativos com ferramentas low-code, otimizando a análise de dados e a tomada de decisão."
+        ]
+      }],
+      "skills": [
+        { 
+          "icon": "fa-brands fa-html5",
+          "nome": "HTML/CSS",
+          "nivel": "Avançado",
+          "descricao": "Criação de layouts responsivos e semânticos, otimizados para SEO. Domínio de Tailwind, Bootstrap e práticas de acessibilidade."
+        },
+        {
+          "icon": "fa-brands fa-angular",
+          "nome": "Angular/Typescript",
+          "nivel": "Intermediário",
+          "descricao": "Desenvolvimento de interfaces dinâmicas com integração a APIs REST. Foco em acessibilidade, performance e criação de pipes customizados."
+        },
+        {
+          "icon": "fa-brands fa-java",
+          "nome": "Java/SpringBoot",
+          "nivel": "Intermediário",
+          "descricao": "Desenvolvimento de APIs RESTful, integração com bancos de dados e aplicação de boas práticas como SOLID. Experiência em projetos legados e modernos."
+        },
+        {
+          "icon": "fa-brands fa-accessible-icon",
+          "nome": "Acessibilidade Web",
+          "nivel": "Intermediário",
+          "descricao": "Implementação de WCAG 2.1, ajustes em componentes Angular/JSP para acessibilidade e testes com ferramentas como TalkBack."
+        },
+        {
+          "icon": "fa-solid fa-list-check",
+          "nome": "Metodologias Ágeis",
+          "nivel": "Intermediário",
+          "descricao": "Experiência em squads ágeis com Scrum e Kanban, garantindo entregas frequentes e priorização eficiente."
+        },
+        {
+          "icon": "fa-brands fa-react",
+          "nome": "React/React Native",
+          "nivel": "Básico",
+          "descricao": "Construção de componentes reutilizáveis e integração com APIs. Conhecimento em hooks e gerenciamento de estado."
+        },
+        {
+          "icon": "fa-brands fa-wordpress",
+          "nome": "Wordpress/PHP",
+          "nivel": "Básico",
+          "descricao": "Criação de plugins e temas customizados no WordPress. Manutenção de sites e personalização com PHP."
+        },
+        {
+          "icon": "fa-solid fa-database",
+          "nome": "SQL/NoSQL",
+          "nivel": "Básico",
+          "descricao": "Consulta e manipulação de dados em SQL. Experiência com NoSQL em projetos de pequeno porte."
+        }
+      ]
+}
+  

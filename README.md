@@ -1,6 +1,21 @@
-# Portifolio
+# Projeto Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
+## Descrição
+Este projeto é um portfólio pessoal.
+
+## Como Rodar o Projeto
+1. Clone o repositório: `git clone <URL_DO_REPOSITORIO>`
+2. Navegue até o diretório do projeto: `cd portifolio`
+3. Instale as dependências: `npm install`
+4. Inicie o servidor de desenvolvimento: `ng serve`
+
+## Dependências
+- Angular
+- Tailwind CSS
+- Outras dependências listadas no package.json
+
+## Exemplos de Uso
+- Acesse `http://localhost:4200` para ver o portfólio em execução.
 
 ## Development server
 

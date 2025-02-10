@@ -1,0 +1,32 @@
+<header class="sticky top-0 w-full bg-white shadow-md z-50">
+  <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="flex items-center">
+      <svg class="w-8 h-8 text-green-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path d="M12 2l9 5v10l-9 5-9-5V7l9-5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </svg>
+      <span class="ml-2 font-bold text-lg text-green-700">Marcos Damasceno</span>
+    </div>
+
+    <div class="hidden md:flex items-center space-x-4">
+      <a href="#sobre" class="text-green-700 font-semibold px-4 py-2 hover:text-green-600 transition-colors">Sobre Mim</a>
+      <a href="#projetos" class="text-green-700 font-semibold px-4 py-2 hover:text-green-600 transition-colors">Projetos</a>
+      <a href="#contatos" class="text-green-700 font-semibold px-4 py-2 hover:text-green-600 transition-colors">Contato</a>
+      <a href="/Marcos_damasceno_Fullstack.pdf" class="text-green-700 font-semibold px-4 py-2 hover:text-green-600 transition-colors">Currículo</a>
+    </div>
+
+    <div class="md:hidden">
+      <button class="text-green-700 focus:outline-none" (click)="toggleMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="md:hidden bg-white shadow-lg" [class.hidden]="!isMenuOpen">
+    <a href="#sobre" class="block text-green-700 font-semibold px-4 py-2 hover:bg-green-50 transition-colors">Sobre Mim</a>
+    <a href="#projetos" class="block text-green-700 font-semibold px-4 py-2 hover:bg-green-50 transition-colors">Projetos</a>
+    <a href="#contatos" class="block text-green-700 font-semibold px-4 py-2 hover:bg-green-50 transition-colors">Contato</a>
+    <a href="/Marcos_damasceno_Fullstack.pdf" class="block text-green-700 font-semibold px-4 py-2 hover:bg-green-50 transition-colors">Currículo</a>
+  </div>
+</header>

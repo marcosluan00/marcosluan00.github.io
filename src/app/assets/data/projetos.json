@@ -1,0 +1,90 @@
+{
+    "projetos": [
+      {
+        "categoria": "Angular",
+        "items": [
+          {
+            "nome": "Ecommerce",
+            "descricao": "Uma plataforma de comércio eletrônico, criado no Curso Introdutorio Start By Capgemini",
+            "imagem": "/ilustracoes/ecommerce.svg",
+            "github": "https://github.com/yourusername/ecommerce",
+            "demo": "https://marcosluan00.github.io/MarcosInformatica-Ecommerce"
+          },
+          {
+            "nome": "Pokedex",
+            "descricao": "Um aplicativo de pokedex, visualização de uma lista de pokemon e alguns detalhes.",
+            "imagem": "/ilustracoes/pokedex.svg",
+            "github": "https://github.com/marcosluan00/Pokedex",
+            "demo": "https://pokedex-sable-seven.vercel.app/"
+          },
+          {
+            "nome": "Landing Page",
+            "descricao": "Landing Page simples de pagina unica para divulgação de serviços prestados por uma psicologa",
+            "imagem": "/ilustracoes/landing-page.svg",
+            "github": "https://github.com/marcosluan00/lp-kelly",
+            "demo": "https://lp-kelly-eve3tvppj-marcosluan00s-projects.vercel.app/"
+          },
+          {
+            "nome": "Bytebank",
+            "descricao": "Um sistema bancário criado em angular e usando o json-server para simular backend ",
+            "imagem": "/ilustracoes/banking-angular.svg",
+            "github": "https://github.com/marcosluan00/Bytebank",
+            "demo": ""
+          }
+        ]
+      },
+      {
+        "categoria": "Java",
+        "items": [
+          {
+            "nome": "Sistema Bancário",
+            "descricao": "Sistema Bancário - Estudo da Arquitetura Hexagonal - Em Construção",
+            "imagem": "/ilustracoes/banking-java.svg",
+            "github": "https://github.com/marcosluan00/sistema-bancario"
+          }
+        ]
+      },
+      {
+        "categoria": "Diversos",
+        "items": [
+          {
+            "nome": "FindMiau - React Native",
+            "descricao": "Desenvolver um aplicativo que visa a divulgação de animais perdidos e adoção/doação de animais.",
+            "imagem": "/ilustracoes/findmiau.svg",
+            "github": "https://github.com/marcosluan00/FindMiau",
+            "demo": ""
+          },  {
+            "nome": "Aluracord",
+            "descricao": "Um aplicativo de chat inspirado no Discord, feito a imersão Alura usando SupaBase",
+            "imagem": "/ilustracoes/chat.svg",
+            "github": "https://github.com/marcosluan00/Aluracord",
+            "demo": ""
+          }
+        ]
+      },
+      {
+        "categoria": "Devops",
+        "items": [
+          {
+            "nome": "ITtalent Vendas e Varejo",
+            "descricao": "Pratica de git - configuração de aprovação de PRs - Pratica devops",
+            "imagem": "/ilustracoes/cloud.svg",
+            "github": "https://github.com/marcosluan00/ITtalent-vendas-e-varejo"
+          },
+          {
+            "nome": "ITtalent Hackathon 1",
+            "descricao": "Subindo um container com imagem de Wordpress - Pratica devops",
+            "imagem": "/ilustracoes/cloud.svg",
+            "github": "https://github.com/marcosluan00/IT_Talent_Hackathon1"
+          },
+          {
+            "nome": " ITtalent Hackathon 2",
+            "descricao": "Configurando esteira (GitHub actions) - Pratica devops",
+            "imagem": "/ilustracoes/cloud.svg",
+            "github": "https://github.com/marcosluan00/IT_Talent_Hackathon2"
+          }
+        ]
+      }
+    ]
+  }
+  
