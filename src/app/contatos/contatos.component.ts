@@ -39,10 +39,7 @@ export class ContatosComponent {
     };
 
       // emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID')
-      console.log('service_id' + environment.emailJsServiceId);
-      console.log('template_id' + environment.emailJsTemplateId);
-      console.log('user_id' + environment.emailJsUserId);
-      
+    
       emailjs.send(environment.emailJsServiceId, environment.emailJsTemplateId, templateParams, environment.emailJsUserId )
       .then((response: EmailJSResponseStatus) => {
         console.log('SUCCESS!', response.status, response.text);
