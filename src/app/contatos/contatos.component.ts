@@ -1,33 +1,56 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormBuilder, FormGroup, FormsModule, NgControl, ReactiveFormsModule, Validators} from '@angular/forms';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-contatos',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, ReactiveFormsModule ],
   templateUrl: './contatos.component.html',
   styleUrl: './contatos.component.css'
 })
 export class ContatosComponent {
+  contactForm: FormGroup = new FormGroup({});
   submitMessage: string | null = null;
   isSuccess: boolean = false;
 
-  onSubmit(form: any) {
-    if (form.valid) {
-      const name = form.value.name;
-      const email = form.value.email;
-      const message = form.value.message;
-      const mailtoLink = `mailto:marcos.damascenorr@gmail.com?subject=Contato de ${name}&body=${message} (Email: ${email})`;
+  constructor(private fb: FormBuilder) {
+    this.contactForm = this.fb.group({
+      name: ['', [Validators.required, Validators.minLength(3)]],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', [Validators.required, Validators.minLength(10)]]
+    });
+  }
 
-      window.location.href = mailtoLink;
+  onSubmit() {
 
-      this.isSuccess = true;
-      this.submitMessage = 'Redirecionando para o cliente de e-mail...';
-      form.reset(); 
-    } else {
+    if (this.contactForm.invalid) {
       this.isSuccess = false;
       this.submitMessage = 'Por favor, preencha todos os campos corretamente.';
+      return;
     }
+
+    const templateParams = {
+      name: this.contactForm.value.name,
+      email: this.contactForm.value.email,
+      message: this.contactForm.value.message
+    };
+
+      // emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID')
+
+      emailjs.send(environment.emailJsServiceId, environment.emailJsTemplateId, templateParams, environment.emailJsUserId )
+      .then((response: EmailJSResponseStatus) => {
+        console.log('SUCCESS!', response.status, response.text);
+        this.isSuccess = true;
+        this.submitMessage = 'Email enviado com sucesso!';
+        this.contactForm.reset();
+      }, (error) => {
+        console.log('FAILED...', error);
+        this.isSuccess = false;
+        this.submitMessage = 'Ocorreu um erro ao enviar o email. Tente novamente mais tarde.';
+      });
   }
+  
 }

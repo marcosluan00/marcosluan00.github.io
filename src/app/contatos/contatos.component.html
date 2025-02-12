@@ -1,45 +1,63 @@
 <div class="container mx-auto px-4 py-8">
   <h2 class="text-3xl font-bold mb-8 text-center text-green-700">Contato</h2>
 
-  <!-- <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
     <div class="mb-6">
       <label for="name" class="block text-gray-700 font-bold mb-2">Nome</label>
-      <input type="text" id="name" name="name" ngModel required
-      class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-700"/>
+      <input type="text" id="name" formControlName="name"
+        class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-700" />
+        @if(contactForm.get('name')?.invalid && contactForm.get('name')?.touched){
+          <div class="text-red-500">
+            Nome deve ter pelo menos 3 caracteres.
+          </div>
+        }
+      
     </div>
 
     <div class="mb-6">
       <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
-      <input type="email" id="email" name="email" ngModel required
-      class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-700"/>
+      <input type="email" id="email" formControlName="email"
+        class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-700" />
+      
+      @if(contactForm.get('email')?.invalid && contactForm.get('email')?.touched){
+        <div class="text-red-500">
+          Insira um email válido.
+        </div>
+      }
     </div>
 
     <div class="mb-6">
       <label for="message" class="block text-gray-700 font-bold mb-2">Mensagem</label>
-      <textarea id="message" name="message" ngModel required rows="4"
-      class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-700">
-      </textarea>
+      <textarea id="message" formControlName="message" rows="4"
+        class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-700"></textarea>
+  
+      @if(contactForm.get('message')?.invalid && contactForm.get('message')?.touched){
+        <div class="text-red-500">
+          A mensagem deve ter pelo menos 10 caracteres.
+        </div>
+      }
     </div>
 
     <button type="submit"
-      class="bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-green-800 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2"
-    > Enviar </button>
+      class="text-white px-6 py-2 rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2"
+      [ngClass]="{'bg-green-700 hover:bg-green-800': !contactForm.invalid, 'bg-gray-400 cursor-not-allowed': contactForm.invalid}"
+      [disabled]="contactForm.invalid">
+      Enviar
+    </button>
 
+   
     @if(submitMessage){
-      <div class="mt-4 p-4 rounded-lg text-center" [ngClass]="{'bg-green-100 text-green-700': isSuccess, 'bg-red-100 text-red-700': !isSuccess}">
-        {{ submitMessage }}
-      </div>
+      <div class="mt-4 p-4 rounded-lg text-center"
+      [ngClass]="{'bg-green-100 text-green-700': isSuccess, 'bg-red-100 text-red-700': !isSuccess}">
+      {{ submitMessage }}
+    </div>
     }
-    
-  </form> -->
+  </form>
 
   <div class="text-center mt-8">
-    <a
-      href="https://wa.me/5595981175777?text=Olá,%20vim%20%20entrar%20em%20contato!"
-      target="_blank"
+    <a href="https://wa.me/5595981175777?text=Olá,%20vim%20%20entrar%20em%20contato!" target="_blank"
       rel="noopener noreferrer"
-      class="bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-green-800 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2"
-    >
+      class="bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-green-800 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2">
       <i class="fa-brands fa-whatsapp mr-2"></i> Enviar Mensagem no WhatsApp
     </a>
   </div>
