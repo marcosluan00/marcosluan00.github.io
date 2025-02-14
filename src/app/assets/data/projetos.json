@@ -50,29 +50,6 @@
             "demo": ""
           }
         ]
-      },
-      {
-        "categoria": "Devops",
-        "items": [
-          {
-            "nome": "ITtalent Vendas e Varejo",
-            "descricao": "Pratica de git - configuração de aprovação de PRs - Pratica devops",
-            "imagem": "/ilustracoes/cloud.svg",
-            "github": "https://github.com/marcosluan00/ITtalent-vendas-e-varejo"
-          },
-          {
-            "nome": "ITtalent Hackathon 1",
-            "descricao": "Subindo um container com imagem de Wordpress - Pratica devops",
-            "imagem": "/ilustracoes/cloud.svg",
-            "github": "https://github.com/marcosluan00/IT_Talent_Hackathon1"
-          },
-          {
-            "nome": " ITtalent Hackathon 2",
-            "descricao": "Configurando esteira (GitHub actions) - Pratica devops",
-            "imagem": "/ilustracoes/cloud.svg",
-            "github": "https://github.com/marcosluan00/IT_Talent_Hackathon2"
-          }
-        ]
       }
     ]
   }
