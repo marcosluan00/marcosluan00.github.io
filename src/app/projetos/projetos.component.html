@@ -1,29 +1,28 @@
-<h2 class="text-3xl font-bold my-8 text-center">Projetos</h2>
-@for(categoria of projetos.projetos; track categoria) {
-    <h3 class="text-2xl font-bold my-8">{{ categoria.categoria }}</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        @for(projeto of categoria.items; track projeto){
-            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img [src]="projeto.imagem" [alt]="projeto.nome" class="w-full h-48 object-contain rounded-lg mb-4" />
-                <h4 class="text-xl font-bold mb-2">{{ projeto.nome }}</h4>
-                <p class="mb-4 text-gray-700">{{ projeto.descricao }}</p>
-                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                    <a [href]="projeto.github" target="_blank" rel="noopener noreferrer" class="bg-green-700 text-white rounded-md px-4 py-2 font-semibold text-center hover:bg-green-800 transition-colors duration-300">
-                        Ver no GitHub
-                    </a>
-                    @if (projeto.demo) {
-                        <a [href]="projeto?.demo" target="_blank" rel="noopener noreferrer" class="text-green-700 font-semibold hover:text-green-800 transition-colors duration-300 text-center">
-                            Ver a Demo
+<div class="bg-white dark:bg-gray-800 py-8">
+    <h2 class="text-3xl font-bold mb-8 text-center text-green-700 dark:text-green-500">Projetos</h2>
+    @for(categoria of projetos.projetos; track categoria) {
+        <h3 class="text-2xl font-bold text-center my-8 text-green-700 dark:text-green-500">{{ categoria.categoria }}</h3>
+        <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto px-4 py-2">
+            @for(projeto of categoria.items; track projeto){
+                <div class="bg-gray-50 dark:bg-gray-900 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full max-w-sm mx-auto">
+                    <img [src]="projeto.imagem" [alt]="projeto.nome" class="w-full h-40 object-contain rounded-lg mb-4" />
+                    <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">{{ projeto.nome }}</h4>
+                    <p class="mb-4 text-gray-700 dark:text-gray-300 text-sm">{{ projeto.descricao }}</p>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                        <a [href]="projeto.github" target="_blank" rel="noopener noreferrer" 
+                           class="bg-green-700 dark:bg-green-600 text-white rounded-md px-3 py-1.5 text-sm font-semibold text-center hover:bg-green-800 dark:hover:bg-green-700 transition-colors duration-300">
+                            Ver no GitHub
                         </a>
-                    }
+                        @if (projeto.demo) {
+                            <a [href]="projeto?.demo" target="_blank" rel="noopener noreferrer" 
+                               class="text-green-700 dark:text-green-500 text-sm font-semibold hover:text-green-800 dark:hover:text-green-400 transition-colors duration-300 text-center">
+                                Ver a Demo
+                            </a>
+                        }
+                    </div>
                 </div>
-            </div>
-        }
-    </div>
-}
-<div class="flex items-center p-4 my-5 bg-yellow-100 text-yellow-800 rounded-lg">
-    <svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12c0-4.97-4.03-9-9-9S3 7.03 3 12s4.03 9 9 9 9-4.03 9-9z" />
-    </svg>
-    <span>Há poucos projetos pois devido a demanda de trabalho não consigo criar muitos projetos pessoais, mas estou trabalhando nisso</span>
+            }
+        </div>
+    }
+    
 </div>

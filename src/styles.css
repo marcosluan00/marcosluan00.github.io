@@ -3,10 +3,36 @@
 @tailwind components;
 @tailwind utilities;
 
+
+* {
+  transition-property: color, background-color, border-color;
+  transition-duration: 300ms;
+}
+
+
+:root {
+  color-scheme: light dark;
+}
+
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 h2 {
     color: #536f5d;
 }
 h3 {
     color: #2d3748;
 }
-  
