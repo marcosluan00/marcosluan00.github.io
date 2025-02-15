@@ -48,9 +48,9 @@
   </nav>
 
   <div class="md:hidden bg-white dark:bg-gray-900 shadow-lg transition-colors duration-300" [class.hidden]="!isMenuOpen">
-    <a href="#sobre" class="block text-green-700 dark:text-green-500 font-semibold px-4 py-2 hover:text-green-600 dark:hover:text-green-400 transition-colors">Sobre Mim</a>
-    <a href="#projetos" class="block text-green-700 dark:text-green-500 font-semibold px-4 py-2 hover:text-green-600 dark:hover:text-green-400 transition-colors">Projetos</a>
-    <a href="#contatos" class="block text-green-700 dark:text-green-500 font-semibold px-4 py-2 hover:text-green-600 dark:hover:text-green-400 transition-colors">Contato</a>
-    <a href="/Marcos_damasceno_Fullstack.pdf" class="block text-green-700 dark:text-green-500 font-semibold px-4 py-2 hover:text-green-600 dark:hover:text-green-400 transition-colors">Currículo</a>
+    <a href="#sobre" class="block text-green-700 dark:text-green-500 font-semibold px-4 py-2 hover:text-green-600 dark:hover:text-green-400 transition-colors" (click)="trackLinkClick('Sobre Mim')">Sobre Mim</a>
+    <a href="#projetos" class="block text-green-700 dark:text-green-500 font-semibold px-4 py-2 hover:text-green-600 dark:hover:text-green-400 transition-colors" (click)="trackLinkClick('Projetos')">Projetos</a>
+    <a href="#contatos" class="block text-green-700 dark:text-green-500 font-semibold px-4 py-2 hover:text-green-600 dark:hover:text-green-400 transition-colors" (click)="trackLinkClick('Contato')">Contato</a>
+    <a href="/Marcos_damasceno_Fullstack.pdf" class="block text-green-700 dark:text-green-500 font-semibold px-4 py-2 hover:text-green-600 dark:hover:text-green-400 transition-colors" (click)="trackLinkClick('Currículo')">Currículo</a>
   </div>
 </header>

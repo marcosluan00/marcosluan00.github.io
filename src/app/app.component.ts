@@ -4,7 +4,11 @@ import { ProjetosComponent } from "./projetos/projetos.component";
 import { ContatosComponent } from "./contatos/contatos.component";
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
-
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
 @Component({
   selector: 'app-root',
   standalone: true,

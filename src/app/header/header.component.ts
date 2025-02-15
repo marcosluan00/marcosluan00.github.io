@@ -16,6 +16,15 @@ export class HeaderComponent {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
+  trackLinkClick(linkName: string) {
+    if (typeof window !== 'undefined' && window.dataLayer) {
+      window.dataLayer.push({
+        event: 'navButtons',
+        linkName: linkName
+      });
+    }
+  }
+
   toggleDarkMode() {
     this.isDarkMode = !this.isDarkMode;
     if (this.isDarkMode) {

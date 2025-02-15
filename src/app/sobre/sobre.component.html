@@ -10,10 +10,10 @@
       <h1 class="text-green-700 dark:text-green-500 font-bold text-3xl mb-2 animate-fade-in">Marcos Damasceno</h1>
       <span class="text-green-700 dark:text-green-500 font-medium text-xl animate-fade-in">Desenvolvedor FullStack</span>
       <div class="flex space-x-4 mt-4">
-        <a href="https://github.com/marcosluan00" target="_blank" class="text-green-700 dark:text-green-500 hover:text-green-500 dark:hover:text-green-400">
+        <a (click)="trackLinkClick('Github', 'SocialLinks')" href="https://github.com/marcosluan00" target="_blank" class="text-green-700 dark:text-green-500 hover:text-green-500 dark:hover:text-green-400">
           <i class="fab fa-github text-2xl"></i>
         </a>
-        <a href="https://www.linkedin.com/in/marcos-damasceno-54b7b0237/" target="_blank" class="text-green-700 dark:text-green-500 hover:text-green-500 dark:hover:text-green-400">
+        <a (click)="trackLinkClick('Linkedin', 'SocialLinks')" href="https://www.linkedin.com/in/marcos-damasceno-54b7b0237/" target="_blank" class="text-green-700 dark:text-green-500 hover:text-green-500 dark:hover:text-green-400">
           <i class="fab fa-linkedin text-2xl"></i>
         </a>
       </div>
@@ -52,8 +52,9 @@
       <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">{{ experiencia.periodo }}</p>
       <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">{{ experiencia.resumo }}</p>
       
-      <button (click)="toggleExperience(experiencia)" class="text-green-700 dark:text-green-500 hover:text-green-600 dark:hover:text-green-400">
-
+      <button (click)="toggleExperience(experiencia); 
+      trackLinkClick(experiencia.companhia, experiencia.show ? 'Esconder detalhes' : 'Mostrar detalhes')"
+      class="text-green-700 dark:text-green-500 hover:text-green-600 dark:hover:text-green-400">
         {{ experiencia.show ? 'Esconder detalhes' : 'Mostrar detalhes' }}
       </button>
       @if(experiencia.show){

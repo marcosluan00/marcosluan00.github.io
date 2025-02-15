@@ -10,11 +10,13 @@
                     <p class="mb-4 text-gray-700 dark:text-gray-300 text-sm">{{ projeto.descricao }}</p>
                     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                         <a [href]="projeto.github" target="_blank" rel="noopener noreferrer" 
+                            (click)="trackLinkClick(projeto.nome, 'Github')"
                            class="bg-green-700 dark:bg-green-600 text-white rounded-md px-3 py-1.5 text-sm font-semibold text-center hover:bg-green-800 dark:hover:bg-green-700 transition-colors duration-300">
                             Ver no GitHub
                         </a>
                         @if (projeto.demo) {
                             <a [href]="projeto?.demo" target="_blank" rel="noopener noreferrer" 
+                            (click)="trackLinkClick(projeto.nome, 'Demonstracao')"
                                class="text-green-700 dark:text-green-500 text-sm font-semibold hover:text-green-800 dark:hover:text-green-400 transition-colors duration-300 text-center">
                                 Ver a Demo
                             </a>

@@ -31,12 +31,20 @@ export class ContatosComponent {
       this.submitMessage = 'Por favor, preencha todos os campos corretamente.';
       return;
     }
+    
 
     const templateParams = {
       name: this.contactForm.value.name,
       email: this.contactForm.value.email,
       message: this.contactForm.value.message
     };
+
+    if (typeof window !== 'undefined' && window.dataLayer) {
+      window.dataLayer.push({
+        event: 'formSubmission',
+        formData: templateParams
+      });
+    }
 
       // emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID')
     
