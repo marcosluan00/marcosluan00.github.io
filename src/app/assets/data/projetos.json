@@ -18,6 +18,13 @@
             "demo": "https://pokedex-sable-seven.vercel.app/"
           },
           {
+            "nome": "To Do List",
+            "descricao": "Projeto Basico de uma lista de tarefas, onde é possivel adicionar, remover e marcar como concluido",
+            "imagem": "/ilustracoes/pokedex.svg",
+            "github": "https://github.com/marcosluan00/todo-list",
+            "demo": "https://todo-list-coral-psi.vercel.app/"
+          },
+          {
             "nome": "Landing Page",
             "descricao": "Landing Page simples de pagina unica para divulgação de serviços prestados por uma psicologa",
             "imagem": "/ilustracoes/landing-page.svg",
