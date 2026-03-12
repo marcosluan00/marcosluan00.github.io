@@ -1,6 +1,19 @@
 {
     "experiencias": [
     {
+        "companhia": "Assigna / Suzano",
+        "periodo": "Atualidade",
+        "resumo": "Desenvolvedimento de soluções voltadas a Materiais Alternativos para redução de custos operacionais e integração de dados.",
+        "detalhes": [
+          "Automação inteligente de processos e integração de dados em larga escala.",
+          "Orquestração de APIs e desenvolvimento robusto em Python (SOLID, Clean Code).",
+          "Construção de pipelines de dados e rotinas serverless no GCP (BigQuery, Cloud Run, Cloud Functions).",
+          "Extensão das capacidades nativas do ecossistema Microsoft com Power Apps e Power Automate.",
+          "Implementação de pipelines de CI/CD, versionamento e testes automatizados com Azure DevOps."
+        ],
+        "show": false
+    },
+    {
         "companhia": "Capgemini",
         "periodo": "2022 - Atual",
         "resumo": "Desenvolvedor Fullstack com experiência no desenvolvimento de aplicações web e mobile usando Angular e Java com Spring Boot.",
@@ -28,35 +41,41 @@
         "show": false
       }],
       "skills": [
-        { 
-          "icon": "fa-brands fa-html5",
-          "nome": "HTML/CSS",
+        {
+          "icon": "fa-brands fa-python",
+          "nome": "Python (Automação/APIs)",
           "nivel": "Avançado",
-          "descricao": "Criação de layouts responsivos e semânticos, otimizados para SEO. Domínio de Tailwind, Bootstrap e práticas de acessibilidade."
+          "descricao": "Desenvolvimento robusto com Clean Code para integrações, orquestração de APIs e processos automatizados em larga escala."
+        },
+        {
+          "icon": "fa-brands fa-google",
+          "nome": "Google Cloud Platform",
+          "nivel": "Avançado",
+          "descricao": "Construção de pipelines de dados e rotinas serverless (BigQuery, Cloud Run, Cloud Functions) de alta performance."
+        },
+        {
+          "icon": "fa-brands fa-microsoft",
+          "nome": "Power Platform",
+          "nivel": "Avançado",
+          "descricao": "Desenvolvimento de alta agilidade com Power Apps e Power Automate, ampliando capacidades nativas com APIs customizadas."
         },
         {
           "icon": "fa-brands fa-angular",
-          "nome": "Angular/Typescript",
+          "nome": "Angular",
           "nivel": "Intermediário",
-          "descricao": "Desenvolvimento de interfaces dinâmicas com integração a APIs REST. Foco em acessibilidade, performance e criação de pipes customizados."
+          "descricao": "Desenvolvimento de interfaces de usuário dinâmicas, integradas a APIs REST, com foco em acessibilidade e performance."
         },
         {
           "icon": "fa-brands fa-java",
-          "nome": "Java/SpringBoot",
+          "nome": "Java & Spring Boot",
           "nivel": "Intermediário",
-          "descricao": "Desenvolvimento de APIs RESTful, integração com bancos de dados e aplicação de boas práticas como SOLID. Experiência em projetos legados e modernos."
+          "descricao": "Criação de APIs RESTful, integração com bancos e manutenção tanto de legados quanto arquiteturas modernas focadas em SOLID."
         },
         {
-          "icon": "fa-brands fa-accessible-icon",
-          "nome": "Acessibilidade Web",
+          "icon": "fa-brands fa-docker",
+          "nome": "DevOps / CI-CD",
           "nivel": "Intermediário",
-          "descricao": "Implementação de WCAG 2.1, ajustes em componentes Angular/JSP para acessibilidade e testes com ferramentas como TalkBack."
-        },
-        {
-          "icon": "fa-solid fa-list-check",
-          "nome": "Metodologias Ágeis",
-          "nivel": "Intermediário",
-          "descricao": "Experiência em squads ágeis com Scrum e Kanban, garantindo entregas frequentes e priorização eficiente."
+          "descricao": "Experiência com Azure DevOps, implementando pipelines, rotinas de CI/CD, testes automatizados e uso de Docker."
         },
         {
           "icon": "fa-brands fa-react",

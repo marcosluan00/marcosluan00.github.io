@@ -4,6 +4,13 @@
         "categoria": "Angular",
         "items": [
           {
+            "nome": "Projeto Beija Flor",
+            "descricao": "Website para o Instituto Beijar Flor, com foco cultural e esportivo",
+            "imagem": "/ilustracoes/projetos.svg",
+            "github": "https://github.com/marcosluan00/projeto-beija-flor",
+            "demo": "https://projeto-beija-flor.vercel.app/"
+          },
+          {
             "nome": "Ecommerce",
             "descricao": "Uma plataforma de comércio eletrônico, criado no Curso Introdutorio Start By Capgemini",
             "imagem": "/ilustracoes/ecommerce.svg",
